@@ -150,3 +150,36 @@ searchInput.addEventListener('keypress', (e) => {
       ? "See less" 
       : "See more";
   });
+
+
+//   chefs special toggle
+  const specialsBtn = document.getElementById("specialsBtn");
+  const specialsGrid = document.getElementById("specialsGrid");
+
+  specialsBtn.addEventListener("click", () => {
+    specialsGrid.classList.toggle("show-all");
+
+    specialsBtn.textContent =
+      specialsGrid.classList.contains("show-all")
+        ? "See less"
+        : "See more";
+  });
+
+
+  const backToTop = document.getElementById("backToTop");
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 300) {
+      backToTop.style.display = "block";
+    } else {
+      backToTop.style.display = "none";
+    }
+  });
+
+  backToTop.addEventListener("click", () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  });
+
