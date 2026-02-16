@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chuk's Kitchen</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;600;700&family=Cormorant+Garamond:wght@500;600;700&family=DM+Sans:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <span class="logo-text">chuks kitchen</span>
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#explore" class="nav-link">Explore</a>
+                <a href="#orders" class="nav-link">My Orders</a>
+                <a href="#account" class="nav-link">Account</a>
+            </div>
+            <button class="login-btn">Login</button>
+            <button class="mobile-toggle" id="mobileToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!--  Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <div class="hero-background"></div>
+        <div class="container hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="title-line">The Heart of</span>
+                    <span class="title-line">Nigerian Home</span>
+                    <span class="title-line">Cooking</span>
+                </h1>
+                <p class="hero-subtitle">Handcrafted with passion, delivered with care.</p>
+
+                <button class="cta-button">
+                    Discover what's new
+                </button>
+            </div>
+
+            <!-- Search Bar -->
+
+            <div class="search-container">
+                <svg class="search-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="11" cy="11" r="8" stroke="#999" stroke-width="2" />
+                    <path d="M21 21L16.65 16.65" stroke="#999" stroke-width="2" stroke-linecap="round" />
+                </svg>
+                <input type="text" class="search-input" id="searchInput" placeholder="What are you craving for today?">
+                <div class="search-suggestions" id="searchSuggestions"></div>
+            </div>
+        </div>
+
+        <!-- Decorative Elements -->
+        <div class="hero-decoration decoration-1"></div>
+        <div class="hero-decoration decoration-2"></div>
+        <div class="hero-decoration decoration-3"></div>
+    </section>
+</body>
+
+</html>
