@@ -136,3 +136,17 @@ searchInput.addEventListener('keypress', (e) => {
         }
     }
 });
+
+
+// category grid toggle
+ const btn = document.getElementById("seeMoreBtn");
+  const grid = document.getElementById("categoryGrid");
+
+  btn.addEventListener("click", () => {
+    grid.classList.toggle("show-all");
+
+    btn.textContent = 
+      grid.classList.contains("show-all") 
+      ? "See less" 
+      : "See more";
+  });
