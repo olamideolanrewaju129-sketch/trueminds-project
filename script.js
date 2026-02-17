@@ -183,3 +183,29 @@ searchInput.addEventListener('keypress', (e) => {
     });
   });
 
+
+
+
+
+    // Fix SVG paths (need stroke not fill for + icon)
+    document.querySelectorAll('.add-btn svg path').forEach(p => {
+      p.setAttribute('stroke', 'white');
+      p.setAttribute('stroke-width', '2.5');
+      p.setAttribute('stroke-linecap', 'round');
+      p.removeAttribute('fill');
+    });
+    document.querySelectorAll('.add-btn svg').forEach(s => {
+      s.setAttribute('fill', 'none');
+    });
+
+       // Add to cart interaction
+    document.querySelectorAll('.add-btn').forEach(btn => {
+      btn.addEventListener('click', function() {
+        this.style.transform = 'scale(1.3)';
+        this.style.background = '#16a34a';
+        setTimeout(() => {
+          this.style.transform = '';
+          this.style.background = '';
+        }, 400);
+      });
+    });

@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chuk's Kitchen</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;600;700&family=Cormorant+Garamond:wght@500;600;700&family=DM+Sans:wght@400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      <div class="logo">
+        <span class="logo-text">chuks kitchen</span>
+      </div>
+      <div class="nav-menu" id="navMenu">
+        <a href="/index.html" class="nav-link active">Home</a>
+        <a href="/explore.html" class="nav-link">Explore</a>
+        <a href="#orders" class="nav-link">My Orders</a>
+        <a href="#account" class="nav-link">Account</a>
+      </div>
+      <button class="login-btn">Login</button>
+      <button class="mobile-toggle" id="mobileToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Explore Hero -->
+  <section class="explore-hero">
+    <div class="explore-overlay"></div>
+    <div class="explore-content">
+      <h1>Chuks Kitchen</h1>
+      <p>Chuks Kitchen Nigerian Home Cooking · 4.8 (1.2k)</p>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <section class="menu-section">
+    <h3>Menu Categories</h3>
+
+    <ul class="menu-list">
+      <li class="active">Popular</li>
+      <li>Jollof Rice & Entrees</li>
+      <li>Swallow & Soups</li>
+      <li>Grills & sides</li>
+      <li>Beverages</li>
+      <li>Desserts</li>
+    </ul>
+  </section>
+
+  <section>
+    <div class="containerr">
+      <h2>Popular</h2>
+
+      <div class="food-grid">
+
+        <div class="food-card">
+                  <img src="/images/keesha-s-kitchen-PqG32DYCTM8-unsplash.jpg" alt="">
+          <div class="food-body">
+            <h3>Jollof Rice & Fried Chicken</h3>
+            <p>Our signature Jollof rice, served with crispy fried chicken and plantain.</p>
+            <div class="food-footer">
+              <span class="price">₦3,500</span>
+              <button class="add-btn">
+                <i class="fa-solid fa-plus"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="food-card">
+          <img src="/images/eba.webp" alt="">
+          <div class="food-body">
+            <h3>Eba & Egusi Soup (Goat Meat)</h3>
+            <p>Hearty Egusi soup with tender goat meat, served with soft Eba.</p>
+            <div class="food-footer">
+              <span class="price">₦3,500</span>
+              <button class="add-btn">
+                <i class="fa-solid fa-plus"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="food-card">
+          <img src="/images/pounded.webp" alt="">
+          <div class="food-body">
+            <h3>Pounded Yam & Edikaikong</h3>
+            <p>Traditional pounded yam with rich, leafy Edikaikong soup.</p>
+            <div class="food-footer">
+              <span class="price">₦3,000</span>
+              <button class="add-btn">
+                <i class="fa-solid fa-plus"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="food-card">
+          <img src="https://images.unsplash.com/photo-1633945274405-b6c8069047b0" alt="">
+          <div class="food-body">
+            <h3>Peppered Snail</h3>
+            <p>Spicy and savory peppered snail, perfect as a starter.</p>
+            <div class="food-footer">
+              <span class="price">₦2,500</span>
+              <button class="add-btn">
+                <i class="fa-solid fa-plus"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="food-card">
+          <img src="https://images.unsplash.com/photo-1559847844-5315695dadae" alt="">
+          <div class="food-body">
+            <h3>Grilled Tilapia Fish</h3>
+            <p>Whole grilled tilapia seasoned with our special spices.</p>
+            <div class="food-footer">
+              <span class="price">₦4,500</span>
+              <button class="add-btn">
+                <i class="fa-solid fa-plus"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="food-card">
+          <img src="/images/keesha-s-kitchen-PqG32DYCTM8-unsplash.jpg" alt="">
+          <div class="food-body">
+            <h3>Jollof Rice & Fried Chicken</h3>
+            <p>Our signature Jollof rice, served with crispy fried chicken and plantain.</p>
+            <div class="food-footer">
+              <span class="price">₦3,500</span>
+              <button class="add-btn">
+                <i class="fa-solid fa-plus"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  
+  <!-- Jollof Rice & Entrees Section -->
+  <section class="menu-section">
+    <h2 class="section-title">Jollof Rice &amp; Entrees</h2>
+    <div class="menu-grid">
+
+      <div class="menu-card">
+        <img class="card-img" src="YOUR_IMAGE_HERE.jpg" alt="Jollof Rice & Smoked Fish" />
+        <div class="card-body">
+          <div class="item-name">Jollof Rice &amp; Smoked Fish</div>
+          <div class="item-desc">Flavorful jollof rice served with perfectly smoked fish.</div>
+        </div>
+        <div class="card-footer">
+          <span class="item-price">₦3,500</span>
+          <button class="add-btn" aria-label="Add to cart">
+            <svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="menu-card">
+        <img class="card-img" src="YOUR_IMAGE_HERE.jpg" alt="Party Jollof Rice (Veg)" />
+        <div class="card-body">
+          <div class="item-name">Party Jollof Rice (Veg)</div>
+          <div class="item-desc">Vegetarian party jollof, full of rich flavors.</div>
+        </div>
+        <div class="card-footer">
+          <span class="item-price">₦2,800</span>
+          <button class="add-btn" aria-label="Add to cart">
+            <svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="menu-card">
+        <img class="card-img" src="YOUR_IMAGE_HERE.jpg" alt="Party Jollof Rice (Veg)" />
+        <div class="card-body">
+          <div class="item-name">Party Jollof Rice (Veg)</div>
+          <div class="item-desc">Vegetarian party jollof, full of rich flavors.</div>
+        </div>
+        <div class="card-footer">
+          <span class="item-price">₦3,500</span>
+          <button class="add-btn" aria-label="Add to cart">
+            <svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Swallow & Soups Section -->
+  <section class="menu-section">
+    <h2 class="section-title">Swallow &amp; Soups</h2>
+    <div class="menu-grid">
+
+      <div class="menu-card">
+        <img class="card-img" src="YOUR_IMAGE_HERE.jpg" alt="Amala with Gbegiri & Ewedu" />
+        <div class="card-body">
+          <div class="item-name">Amala with Gbegiri &amp; Ewedu</div>
+          <div class="item-desc">Classic Amala served with Gbegiri (beans) and Ewedu (jute leaf) soup.</div>
+        </div>
+        <div class="card-footer">
+          <span class="item-price">₦3,100</span>
+          <button class="add-btn" aria-label="Add to cart">
+            <svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="menu-card">
+        <img class="card-img" src="YOUR_IMAGE_HERE.jpg" alt="Fufu & Okra Soup (Fish)" />
+        <div class="card-body">
+          <div class="item-name">Fufu &amp; Okra Soup (Fish)</div>
+          <div class="item-desc">Light Fufu served with fresh okra soup and tilapia fish.</div>
+        </div>
+        <div class="card-footer">
+          <span class="item-price">₦3,300</span>
+          <button class="add-btn" aria-label="Add to cart">
+            <svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="menu-card">
+        <img class="card-img" src="YOUR_IMAGE_HERE.jpg" alt="Fufu & Okra Soup (Fish)" />
+        <div class="card-body">
+          <div class="item-name">Fufu &amp; Okra Soup (Fish)</div>
+          <div class="item-desc">Light Fufu served with fresh okra soup and tilapia fish.</div>
+        </div>
+        <div class="card-footer">
+          <span class="item-price">₦3,500</span>
+          <button class="add-btn" aria-label="Add to cart">
+            <svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+
+ <script>
+    // Add to cart interaction
+    document.querySelectorAll('.add-btn').forEach(btn => {
+      btn.addEventListener('click', function() {
+        this.style.transform = 'scale(1.3)';
+        this.style.background = '#16a34a';
+        setTimeout(() => {
+          this.style.transform = '';
+          this.style.background = '';
+        }, 400);
+      });
+    });
+  </script><script src="script.js"></script>
+
+
+
+</body>
+
+</html>
