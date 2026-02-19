@@ -24,7 +24,7 @@
             <div class="nav-menu" id="navMenu">
                 <a href="/index.html" class="nav-link active">Home</a>
                 <a href="/explore.html" class="nav-link">Explore</a>
-                <a href="#orders" class="nav-link">My Orders</a>
+                <a href="/my-orders.html" class="nav-link">My Orders</a>
                 <a href="#account" class="nav-link">Account</a>
             </div>
             <button class="login-btn">Login</button>
@@ -36,56 +36,69 @@
         </div>
     </nav>
 
-    <section class="food-details">
 
-        <div class="left-image"></div>
 
-        <div class="right-panel">
+    <!-- Food details -->
 
-            <button class="close-btn">
-                <i class="fa-solid fa-xmark"></i>
-            </button>
+    <div class="contaiiner">
 
-            <div class="title">Jollof Rice with Fried Chicken</div>
+        <!-- LEFT IMAGE -->
+        <div class="food-image">
+            <img src="/images/add-image.png.png" alt="Jollof Rice">
+        </div>
+
+        <!-- RIGHT DETAILS -->
+        <div class="details-card">
+
+            <div class="close-btn">X</div>
+
+            <h2>Jollof Rice with Fried Chicken</h2>
             <div class="price">₦2,800</div>
 
-            <div class="description">
+            <p class="description">
                 Our signature Jollof rice, cooked to perfection with aromatic spices,
-                served with juicy, golden-fried chicken. A classic Nigerian comfort food,
-                rich in flavor and satisfying.
+                served with juicy, golden-fried chicken. A classic Nigerian comfort
+                food, rich in flavor and satisfying.
+            </p>
+
+            <div class="info-tags">
+                <span><i style="color:#ff7a18;" class="fa-solid fa-fire"></i> Mildly spicy</span>
+                <span><i style="color:#ff7a18;" class="fa-solid fa-leaf"></i> Vegetarian option available</span>
+                <span style="color:#6b46ff;"><i style="color:#ff7a18;" class="fa-solid fa-triangle-exclamation"></i>
+                    View Allergies</span>
             </div>
 
-            <div class="info-row">
-                <span><i class="fa-solid fa-fire"></i> Mildly spicy</span>
-                <span><i class="fa-solid fa-leaf"></i> Vegetarian option available</span>
-                <span style="color:#ff7a18;"><i class="fa-solid fa-triangle-exclamation"></i> View Allergies</span>
-            </div>
-
+            <!-- Protein -->
             <div class="section-title">Choose Your Protein</div>
 
-            <div class="option">
-                <div class="option-left">
-                    <input type="radio" name="protein" checked>
-                    <label>Fried Chicken</label>
-                </div>
-                <span style="font-size:0.7rem; color:#777;">(Default)</span>
-            </div>
 
-            <div class="option">
-                <div class="option-left">
-                    <input type="radio" name="protein">
-                    <label>Grilled Fish</label>
-                </div>
-                <span>+₦500</span>
-            </div>
+              <!-- Protein -->
+        <div class="section-title">Choose Your Protein</div>
 
-            <div class="option">
-                <div class="option-left">
-                    <input type="radio" name="protein">
-                    <label>Beef</label>
-                </div>
-                <span>+₦700</span>
+        <div class="option">
+            <div class="option-left">
+                <div class="radio"></div>
+                Fried Chicken
             </div>
+            <span>[Default]</span>
+        </div>
+
+        <div class="option">
+            <div class="option-left">
+                <div class="radio"></div>
+                Grilled Fish
+            </div>
+            <span>+₦500</span>
+        </div>
+
+        <div class="option">
+            <div class="option-left">
+                <div class="radio"></div>
+                Beef
+            </div>
+            <span>+₦700</span>
+        </div>
+
 
             <div class="section-title" style="margin-top:20px;">Extra Sides (Optional)</div>
 
@@ -113,12 +126,13 @@
                 <span>+₦300</span>
             </div>
 
-            <div class="section-title" style="margin-top:20px;">Special Instructions</div>
-            <textarea placeholder="E.g no onion, food too spicy, reduce pepper..."></textarea>
-
+            <!-- Special Instructions -->
+            <div class="section-title">Special Instructions</div>
+            <textarea placeholder="E.g no onion, food is too spicy, etc..."></textarea>
 
         </div>
-    </section>
+
+    </div>
 
 
 
