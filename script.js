@@ -27,6 +27,31 @@ navLinks.forEach(link => {
     });
 });
 
+// Set active link based on current page
+function setActiveLink() {
+    const currentPath = window.location.pathname.split('/').pop() || 'index.html';
+    
+    navLinks.forEach(link => {
+        const linkPath = link.getAttribute('href').split('/').pop();
+        
+        // Handle root path / as index.html
+        const isIndex = (currentPath === 'index.html' || currentPath === '') && (linkPath === 'index.html');
+        const isMatch = linkPath === currentPath;
+
+        if (isMatch || isIndex) {
+            link.classList.add('active');
+        } else {
+            // Only remove if it's not a hash link (handled by scroll logic)
+            if (!link.getAttribute('href').startsWith('#')) {
+                link.classList.remove('active');
+            }
+        }
+    });
+}
+
+// Initialize active link on load
+window.addEventListener('load', setActiveLink);
+
 // Active nav link on scroll
 const sections = document.querySelectorAll('section[id]');
 
