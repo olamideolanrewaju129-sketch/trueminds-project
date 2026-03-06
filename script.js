@@ -1,14 +1,3 @@
-// Navigation scroll effect
-const navbar = document.getElementById('navbar');
-const navLinks = document.querySelectorAll('.nav-link');
-
-window.addEventListener('scroll', () => {
-    if (window.scrollY > 50) {
-        navbar.classList.add('scrolled');
-    } else {
-        navbar.classList.remove('scrolled');
-    }
-});
 
 // Mobile menu toggle
 const mobileToggle = document.getElementById('mobileToggle');
@@ -30,10 +19,10 @@ navLinks.forEach(link => {
 // Set active link based on current page
 function setActiveLink() {
     const currentPath = window.location.pathname.split('/').pop() || 'index.html';
-    
+
     navLinks.forEach(link => {
         const linkPath = link.getAttribute('href').split('/').pop();
-        
+
         // Handle root path / as index.html
         const isIndex = (currentPath === 'index.html' || currentPath === '') && (linkPath === 'index.html');
         const isMatch = linkPath === currentPath;
@@ -98,14 +87,14 @@ const dishes = [
 
 searchInput.addEventListener('input', (e) => {
     const searchTerm = e.target.value.toLowerCase().trim();
-    
+
     if (searchTerm.length === 0) {
         searchSuggestions.classList.remove('active');
         searchSuggestions.innerHTML = '';
         return;
     }
 
-    const filtered = dishes.filter(dish => 
+    const filtered = dishes.filter(dish =>
         dish.toLowerCase().includes(searchTerm)
     );
 
@@ -119,7 +108,7 @@ searchInput.addEventListener('input', (e) => {
             `)
             .join('');
         searchSuggestions.classList.add('active');
-        
+
         // Add click handlers to suggestions
         document.querySelectorAll('.suggestion-item').forEach(item => {
             item.addEventListener('click', () => {
@@ -164,73 +153,73 @@ searchInput.addEventListener('keypress', (e) => {
 
 
 // category grid toggle
- const btn = document.getElementById("seeMoreBtn");
-  const grid = document.getElementById("categoryGrid");
+const btn = document.getElementById("seeMoreBtn");
+const grid = document.getElementById("categoryGrid");
 
-  btn.addEventListener("click", () => {
+btn.addEventListener("click", () => {
     grid.classList.toggle("show-all");
 
-    btn.textContent = 
-      grid.classList.contains("show-all") 
-      ? "See less" 
-      : "See more";
-  });
+    btn.textContent =
+        grid.classList.contains("show-all")
+            ? "See less"
+            : "See more";
+});
 
 
 //   chefs special toggle
-  const specialsBtn = document.getElementById("specialsBtn");
-  const specialsGrid = document.getElementById("specialsGrid");
+const specialsBtn = document.getElementById("specialsBtn");
+const specialsGrid = document.getElementById("specialsGrid");
 
-  specialsBtn.addEventListener("click", () => {
+specialsBtn.addEventListener("click", () => {
     specialsGrid.classList.toggle("show-all");
 
     specialsBtn.textContent =
-      specialsGrid.classList.contains("show-all")
-        ? "See less"
-        : "See more";
-  });
+        specialsGrid.classList.contains("show-all")
+            ? "See less"
+            : "See more";
+});
 
 
-  const backToTop = document.getElementById("backToTop");
+const backToTop = document.getElementById("backToTop");
 
-  window.addEventListener("scroll", () => {
+window.addEventListener("scroll", () => {
     if (window.scrollY > 300) {
-      backToTop.style.display = "block";
+        backToTop.style.display = "block";
     } else {
-      backToTop.style.display = "none";
+        backToTop.style.display = "none";
     }
-  });
+});
 
-  backToTop.addEventListener("click", () => {
+backToTop.addEventListener("click", () => {
     window.scrollTo({
-      top: 0,
-      behavior: "smooth"
+        top: 0,
+        behavior: "smooth"
     });
-  });
+});
 
 
 
 
 
-    // Fix SVG paths (need stroke not fill for + icon)
-    document.querySelectorAll('.add-btn svg path').forEach(p => {
-      p.setAttribute('stroke', 'white');
-      p.setAttribute('stroke-width', '2.5');
-      p.setAttribute('stroke-linecap', 'round');
-      p.removeAttribute('fill');
-    });
-    document.querySelectorAll('.add-btn svg').forEach(s => {
-      s.setAttribute('fill', 'none');
-    });
+// Fix SVG paths (need stroke not fill for + icon)
+document.querySelectorAll('.add-btn svg path').forEach(p => {
+    p.setAttribute('stroke', 'white');
+    p.setAttribute('stroke-width', '2.5');
+    p.setAttribute('stroke-linecap', 'round');
+    p.removeAttribute('fill');
+});
+document.querySelectorAll('.add-btn svg').forEach(s => {
+    s.setAttribute('fill', 'none');
+});
 
-       // Add to cart interaction
-    document.querySelectorAll('.add-btn').forEach(btn => {
-      btn.addEventListener('click', function() {
+// Add to cart interaction
+document.querySelectorAll('.add-btn').forEach(btn => {
+    btn.addEventListener('click', function () {
         this.style.transform = 'scale(1.3)';
         this.style.background = '#16a34a';
         setTimeout(() => {
-          this.style.transform = '';
-          this.style.background = '';
+            this.style.transform = '';
+            this.style.background = '';
         }, 400);
-      });
     });
+});
